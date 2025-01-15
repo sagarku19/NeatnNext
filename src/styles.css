@@ -4,6 +4,7 @@ html, body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
   margin: 0; /* Ensure no default margin on body */
   padding: 0; /* Ensure no default padding on body */
+  box-sizing: border-box;
 }
 
 /* General container style */
@@ -30,7 +31,7 @@ header {
 }
 
 .logo {
-  font-size: 3rem;
+  font-size: 2.3rem;
   margin: 0;
   flex-grow: 1; /* Ensures the logo is centered on mobile */
   text-align: center;
