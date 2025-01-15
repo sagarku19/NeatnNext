@@ -1,0 +1,171 @@
+/* Home Page Styles */
+.home-container {
+    padding: 20px;
+  }
+  
+  /* Welcome Section */
+  .welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .welcome-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .welcome-section p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .hero-image {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Services Section */
+  .services-section {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .services-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* This will auto-adjust, but for larger screens, 4 cards will fit */
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  /* Specific layout when there are more than 4 items */
+  @media (min-width: 1200px) {
+    .service-cards {
+      grid-template-columns: repeat(4, 1fr); /* Forces 4 cards on larger screens */
+    }
+  }
+  
+  .service-card {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .service-card p {
+    color: #666;
+  }
+  
+  /* Image Gallery Section */
+  .gallery-section {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .gallery-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Testimonial Section */
+  .testimonial-section {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .testimonial-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .testimonial {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial p {
+    color: #666;
+    font-style: italic;
+  }
+  
+  .testimonial h4 {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .cta-section p {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  .cta-section button {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .cta-section button:hover {
+    background-color: #e6b800;
+  }
+  
+  .cta-btn a {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+  }
+
+ 
