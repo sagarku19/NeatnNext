@@ -1,20 +1,44 @@
-import React, { useState } from "react";
-import "./contact.css"; // Import contact page styles
+import React, { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
+import "./contact.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    to_name: "",
+    from_name: "",
     message: "",
   });
+  const form = useRef();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    alert("Thank you for contacting us!");
+
+    emailjs
+      .sendForm('service_a9rrq6j', 'template_91xf2wd', form.current, 'IgW6wXBE1LkCotTzJ')
+      .then(
+        () => {
+          Swal.fire({
+            title: "Success",
+            text: "Message Sent",
+            icon: "success",
+          });
+          // Reset the form after submission
+          setFormData({ to_name: "", from_name: "", message: "" });
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          Swal.fire({
+            title: "Error",
+            text: "Failed to send message. Please try again later.",
+            icon: "error",
+          });
+        }
+      );
   };
 
   return (
@@ -22,25 +46,25 @@ const Contact = () => {
       <h1>Contact Us</h1>
       <p>We'd love to hear from you! Reach out to us for any inquiries.</p>
 
-      <form onSubmit={handleSubmit} className="contact-form">
+      <form ref={form} onSubmit={sendEmail} className="contact-form">
         <div className="form-group">
-          <label htmlFor="name">Full Name</label>
+          <label htmlFor="to_name">Full Name</label>
           <input
             type="text"
-            id="name"
-            name="name"
-            value={formData.name}
+            id="to_name"
+            name="to_name" // Matches EmailJS template placeholder
+            value={formData.to_name}
             onChange={handleChange}
             required
           />
         </div>
         <div className="form-group">
-          <label htmlFor="email">Email Address</label>
+          <label htmlFor="from_name">Email Address</label>
           <input
             type="email"
-            id="email"
-            name="email"
-            value={formData.email}
+            id="from_name"
+            name="from_name" // Matches EmailJS template placeholder
+            value={formData.from_name}
             onChange={handleChange}
             required
           />
@@ -49,7 +73,7 @@ const Contact = () => {
           <label htmlFor="message">Your Message</label>
           <textarea
             id="message"
-            name="message"
+            name="message" // Matches EmailJS template placeholder
             value={formData.message}
             onChange={handleChange}
             required

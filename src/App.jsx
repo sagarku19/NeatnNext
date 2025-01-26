@@ -5,7 +5,10 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+
+import wb from "./assets/Media-img/whb.png";
 import "./styles.css"; // Import the CSS file
+import "./components/whatsapp.css";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false); // State to track the menu open/close
@@ -73,6 +76,20 @@ const App = () => {
 
         {/* Footer */}
         <Footer />
+
+        {/* WhatsApp Button */}
+        <a
+          href="https://wa.me/918102272557?text=Hello How can I Help you?" // Replace with your WhatsApp number in international format
+          className="whatsapp-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={wb} // Replace with a local or custom WhatsApp icon if preferred
+            alt="WhatsApp"
+            className="whatsapp-icon"
+          />
+        </a>
       </div>
     </Router>
   );

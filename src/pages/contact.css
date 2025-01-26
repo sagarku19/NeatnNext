@@ -46,6 +46,11 @@
     border: 1px solid #ccc;
     border-radius: 5px;
   }
+
+  .contact-form textarea {
+    height: 150px;
+    font-size: 1rem;
+  }
   
   .contact-form input[type="email"] {
     font-size: 1.2rem;
