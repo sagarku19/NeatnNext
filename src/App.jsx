@@ -4,6 +4,14 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+
+import TermsAndConditions from "./other-pages/TermsAndConditions";
+import PrivacyPolicy from "./other-pages/PrivacyPolicy";
+import FAQ from "./other-pages/Faq";
+import Prices from "./other-pages/Prices";
+import AboutFounder from "./other-pages/AboutFounder";
+
+
 import Footer from "./components/Footer";
 
 import wb from "./assets/Media-img/whb.png";
@@ -71,6 +79,11 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />  
+            <Route path="/faq" element={<FAQ />} /> 
+            <Route path="/prices" element={<Prices />} /> 
+            <Route path="/aboutfounder" element={<AboutFounder />} /> 
           </Routes>
         </main>
 

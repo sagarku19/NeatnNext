@@ -1,7 +1,12 @@
 {
-    "rewrites": [
-      { "source": "/about", "destination": "/" },
-      { "source": "/services", "destination": "/" }
-    ]
-  }
-  
+  "rewrites": [
+    { "source": "/about", "destination": "/" },
+    { "source": "/services", "destination": "/" },
+    { "source": "/prices", "destination": "/" },
+    { "source": "/faq", "destination": "/" },
+    { "source": "/contact", "destination": "/" },
+    { "source": "/aboutfounder", "destination": "/" },
+    { "source": "/terms-and-conditions", "destination": "/" },
+    { "source": "/privacy-policy", "destination": "/" }
+  ]
+}
