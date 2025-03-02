@@ -14,7 +14,7 @@ const Footer = () => {
         {/* Section 1: Logo and Tagline */}
         <div className="footer-logo">
           <h2>
-            <span>NeatnNext - A Laundry Marketpalce</span>
+            <span>NeatnNext - A Laundry Marketplace</span>
           </h2>
           <p>Fresh Fab Next to You.</p>
         </div>

@@ -9,13 +9,13 @@ const Home = () => (
     {/* Welcome Section */}
     <section className="welcome-section">
       <h1>Welcome to NeatnNext</h1>
-      <p>A Lundry Marketplace for all your Laundry needs!</p>
+      <p>A Laundry Marketplace for all your Laundry needs!</p>
       <img src={img} alt="Laundry Service" className="hero-image" />
     </section>
 
     {/* Services Section */}
     <section className="services-section">
-      <h2>Our Services Providers Offers</h2>
+      <h2>Our Service Provider Offers</h2>
       <div className="service-cards">
         <div className="service-card">
           <h3>Wash & Fold</h3>
