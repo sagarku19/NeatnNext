@@ -26,7 +26,7 @@ const Footer = () => {
             <a href="/">
             <img src={nnlg} alt="NeatnNext Logo" className="footer-logo-img" />
             </a>
-            <h3>Copyright &copy; {new Date().getFullYear()} NeatnNext</h3>
+            <h3>NeatnNext</h3>
           </div>
 
           {/* Part 2: Quick Links */}
@@ -78,7 +78,7 @@ const Footer = () => {
 
         {/* Section 3: Footer Bottom */}
         <div className="footer-bottom">
-          <p>Copyright &copy; {new Date().getFullYear()} NeatnNext. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} NeatnNext. All rights reserved.</p>
           <div className="footer-bottom-links">
             <a href="/terms-and-conditions">Terms & Conditions</a>
             <a href="/privacy-policy">Privacy Policy</a>
