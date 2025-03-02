@@ -9,13 +9,13 @@ const Home = () => (
     {/* Welcome Section */}
     <section className="welcome-section">
       <h1>Welcome to NeatnNext</h1>
-      <p>Your one-stop solution for all your laundry needs!</p>
+      <p>A Lundry Marketplace for all your Laundry needs!</p>
       <img src={img} alt="Laundry Service" className="hero-image" />
     </section>
 
     {/* Services Section */}
     <section className="services-section">
-      <h2>Our Services</h2>
+      <h2>Our Services Providers Offers</h2>
       <div className="service-cards">
         <div className="service-card">
           <h3>Wash & Fold</h3>
@@ -55,16 +55,17 @@ const Home = () => (
       <div className="testimonials">
         <div className="testimonial">
           <p>
-            "NeatnNext provides excellent laundry services. My clothes always
-            come out looking fresh and clean!"
+            "NeatnNext made laundry so easy! Found a great service nearby, and
+            now I never worry about washing clothes."
           </p>
-          <h4>- Saurabh D.</h4>
+          <h4>- Saurabh Dwivedi</h4>
         </div>
-        <div className="testimonial">
+        <div  className="testimonial">
           <p>
-            "The best dry cleaning service I've ever used. Highly recommend!"
+            "Super fast service! Got my clothes cleaned and delivered the very
+            next day—right on time!"
           </p>
-          <h4>- Rishika Y.</h4>
+          <h4>- Dilip Satpute</h4>
         </div>
       </div>
     </section>

@@ -67,7 +67,7 @@ const AboutFounder = () => {
         <h3 style={styles.founderName}>NeatnNext Firm</h3>
         <hr />
         <p style={styles.founderBio}>
-          We at NeatnNext are a group of three tech enthusiasts with a shared passion for revolutionizing the laundry industry. With years of experience in technology, our team set out to create a seamless and efficient experience for both customers and laundry service providers.
+          We at NeatnNext are a group of five tech enthusiasts with a shared passion for revolutionizing the laundry industry. With years of experience in technology, our team set out to create a seamless and efficient experience for both customers and laundry service providers.
           <br />
           <br />
           NeatnNext was born from our vision to make laundry services more accessible, reliable, and user-friendly, breaking the barriers between customers and their everyday laundry needs.

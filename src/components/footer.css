@@ -146,4 +146,15 @@ footer .social-links a:hover {
     max-width: 100%;
     margin: 10px 0;
   }
+  
 }
+
+a.email-link {
+  color: pink;
+  text-decoration: none;
+}
+
+a.email-link:hover {
+  color: lightgray; /* Optional: Changes color on hover */
+}
+

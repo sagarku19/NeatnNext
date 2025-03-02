@@ -55,12 +55,12 @@ const FAQ = () => {
         <hr /><hr />
         <h2 style={styles.h2}>1. How do I book a laundry service?</h2>
         <p style={styles.p}>
-          Download the NeatnNext User App, browse available shops in your area, select services, and confirm your booking.
+          Oder using Our Whatsapp Bot. Click on Whatsapp Icon and send "Hi" message to initiate.
         </p>
 
         <h2 style={styles.h2}>2. Can I track my order?</h2>
         <p style={styles.p}>
-          Yes, you can track your order status and delivery updates through the app.
+          Yes, you can track your order status and delivery updates through the whatsapp Bot.
         </p>
 
         <h2 style={styles.h2}>3. What if my laundry is damaged?</h2>
@@ -88,8 +88,8 @@ const FAQ = () => {
           You can reach us through the following methods:
           <ul style={styles.ul}>
             <li>Email: <a href="mailto:neatnnext@gmail.com">neatnnext@gmail.com</a></li>
-            <li>Phone: +91 81022 72557</li>
-            <li>In-app chat feature</li>
+            <li>Phone: +91 79723 03745</li>
+            <li>In-Bot chat feature for registering complaints.</li>
           </ul>
         </p>
       </div>

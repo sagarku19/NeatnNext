@@ -92,13 +92,13 @@ const App = () => {
 
         {/* WhatsApp Button */}
         <a
-          href="https://wa.me/918102272557?text=Hello How can I Help you?" // Replace with your WhatsApp number in international format
+          href="https://wa.me/917972303745?text=Hii" 
           className="whatsapp-btn"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
-            src={wb} // Replace with a local or custom WhatsApp icon if preferred
+            src={wb} 
             alt="WhatsApp"
             className="whatsapp-icon"
           />
